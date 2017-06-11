@@ -1,0 +1,49 @@
+<!doctype html>
+<html class="no-js" lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Furnidata Toolkit</title>
+
+        <meta name="description" content="Furnidata Toolkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="overlay">
+            <div class="wrapper">
+                <img src="img/loading.svg" height="40">
+                <p>processing</p>
+            </div>
+        </div>
+        <div id="message">
+            <p>
+                Your new furnidata.xml is ready.
+                <a href="furnidata.xml" download="furnidata.xml" class="button">DOWNLOAD</a>
+            </p>
+        </div>
+        <div class="container_12">
+            <div class="grid_12">
+                <h2>Furnidata Toolkit</h2>
+            </div>
+            <form action="" method="post">
+                <div class="grid_12">
+                    <h3>XML</h3>
+                    <textarea name="xml"></textarea>
+                </div>
+            </form>
+            <div class="grid_12">
+                <button class="button" onclick="mergeTogether();">MERGE TOGETHER</button>
+            </div>
+            <footer class="grid_12">
+                <p style="text-align: center;">Made with <span style="color: #F44336">&hearts;</span> by Tafelglotzer.</p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
