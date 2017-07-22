@@ -9,7 +9,7 @@ $furnidata = new SimpleXMLElement(file_get_contents('furnidata.xml'));
 $roomItems = sprintf('<roomitemtypes>%s</roomitemtypes>', $_POST['roomItems']);
 $wallItems = sprintf('<wallitemtypes>%s</wallitemtypes>', $_POST['wallItems']);
 
-$items = new SimpleXMLElement(sprintf('<items>%s</items>', $roomItems . $wallItems));
+$items = new SimpleXMLElement(sprintf('<items>%s</items>', $roomItems.$wallItems));
 
 if (! empty($items->roomitemtypes)) {
     foreach ($items->roomitemtypes->furnitype as $item) {
